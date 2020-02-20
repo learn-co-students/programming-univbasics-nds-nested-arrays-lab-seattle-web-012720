@@ -20,17 +20,52 @@ CONVENTIONAL_PRODUCE = [
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shell
   
-
-
-new_assembled_matrix = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
-
+  sorted_array = 
+    [
+  "Grapefruit",
+  "Pineapple",
+  "Oranges",
+  "Watermelon",
+  "Eggplant"],
+  [ 
+    "Strawberries",
+    "Potatoes",
+    "Grapes",
+    "Avocadoes",
+    "Asparagus"]
+ 
 end
 
 def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  ar = [CONVENTIONAL_PRODUCE.sort, ORGANIC_PRODUCE.sort]
+  
+  # sorted_array = [
+      
+  #       ["Strawberries",
+  #       "Potatoes",
+  #       "Grapes",
+  #       "Avocadoes",
+  #       "Asparagus"
+  #     ]
+      
+  #     [
+  #       "Grapefruit",
+  #       "Pineapple",
+  #       "Oranges",
+  #       "Watermelon",
+  #       "Eggplant"
+  #     ]
+  #   ]
+  #     sorted_array.sort
+  sorted_array = [[CONVENTIONAL_PRODUCE],[ORGANIC_PRODUCE]]
+  sorted_array.sort
+  sorted_array
+
+  
+
+  
 end
 
 
@@ -44,6 +79,6 @@ def matrix_update(matrix, row, column, new_value)
   # Given any matrix (array of arrays), a row index and a column index, 
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
-  matrix[row][column] = new_value
-   matrix
+  
+  
 end
